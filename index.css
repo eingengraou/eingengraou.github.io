@@ -1,0 +1,58 @@
+body{
+  margin:1rem 2rem;  
+  width:100%;
+}
+
+nav{
+    display:flex;
+    top:0;
+}
+
+.navl{
+    left:0;
+    position:fixed;
+}
+
+.navr{
+    right:0;
+    position:fixed;
+}
+
+.nav{
+    display:none;
+    flex-direction:column;
+    padding:5px;
+}
+
+.nav.show{
+    display:flex;
+}
+
+.coverpic{
+    top:0;
+    height:100px;
+    width:100%;
+}
+
+.section1{
+    display:flex
+}
+
+.profpic{
+    height:100px;
+    width:100px;
+    border:solid 3px;
+    border-radius:50%;
+    margin-bottom:-300px;
+}
+
+
+.section1r{
+    display:flex;
+}
+
+
+.section1r *{
+    margin:0rem 1rem;
+}
+
