@@ -11,13 +11,13 @@ nav{
 .navl{
     left:0;
     position:fixed;
-  margin:1rem 3rem;
+    margin:1rem 3rem;
 }
 
 .navr{
     right:0;
     position:fixed;
-  margin:1rem 3rem;
+    margin:1rem 3rem;
 }
 
 .nav{
@@ -34,11 +34,11 @@ nav{
     top:0;
     height:500px;
     width:100%;
-    margin-bottom:-300px;
+    margin-bottom:-200px;
 }
 
 .section1{
-    display:flex
+    display:flex;
 }
 
 .profpic{
