@@ -40,6 +40,7 @@ nav{
 .section1{
     display:flex;
     margin:0rem 5rem;
+    padding:7px;
 }
 
 .profpic{
