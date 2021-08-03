@@ -5,16 +5,19 @@ body{
 nav{
     display:flex;
     top:0;
+  
 }
 
 .navl{
     left:0;
     position:fixed;
+  margin:1rem 3rem;
 }
 
 .navr{
     right:0;
     position:fixed;
+  margin:1rem 3rem;
 }
 
 .nav{
