@@ -39,12 +39,12 @@ nav{
 
 .section1{
     display:flex;
-    margin:0rem 3rem;
+    margin:0rem 5rem;
 }
 
 .profpic{
-    height:100px;
-    width:100px;
+    height:200px;
+    width:200px;
     border:solid 3px;
     border-radius:50%;
     
