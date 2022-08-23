@@ -3,14 +3,14 @@ title: "Running ZAP on on a raspberry pi"
 summary: >
   Setting up ZAP on the raspberry pi.
 images:
-- https://www.zaproxy.org/blog/2022-08-22-the-param-digger-addon/images/mascot.png
+- https://www.zaproxy.org/blog/zaponpi/Screenshot_2022-08-20-18-01-55-325_com.realvnc.viewer.android.jpg
 type: post
 tags:
 - blog
 - gsoc
-date: "2022-08-22"
+date: "2022-08-29"
 authors: 
-    - arkaprabha
+    - eingengraou
 ---
 
 # Running ZAP on on a raspberry pi
