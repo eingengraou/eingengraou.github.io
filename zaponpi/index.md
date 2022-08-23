@@ -17,7 +17,7 @@ authors:
 
 
 ## The whole idea !
-I know maybe a lot of people that are going to read this are probably going to ask, ***why go through this stress? , why not just use your computer? ***
+I know maybe a lot of people that are going to read this are probably going to ask, ***why go through this stress? , why not just use your computer?***
 
 
 The single reason was that i had issues with steady power supply and needed something to hack with all the time even if i'm away from home so it would be possible to spend more time on targets.
