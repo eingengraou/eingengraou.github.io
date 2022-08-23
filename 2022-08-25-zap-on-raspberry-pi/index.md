@@ -3,7 +3,7 @@ title: "Running ZAP on a raspberry pi"
 summary: >
   Setting up ZAP on the raspberry pi.
 images:
-- https://www.zaproxy.org/blog/zaponpi/Screenshot_2022-08-20-18-01-55-325_com.realvnc.viewer.android.jpg
+- https://www.zaproxy.org/blog/2022-08-25-zap-on-raspberry-pi/images/Screenshot_2022-08-20-18-01-55-325_com.realvnc.viewer.android.jpg
 type: post
 tags:
 - blog
