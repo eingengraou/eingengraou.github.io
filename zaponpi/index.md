@@ -13,10 +13,10 @@ authors:
     - arkaprabha
 ---
 
-#Running ZAP on on a raspberry pi
+# Running ZAP on on a raspberry pi
 
 
-##The whole idea !
+## The whole idea !
 I know maybe a lot of people that are going to read this are probably going to ask, ***why go through this stress? , why not just use your computer? ***
 
 
@@ -28,14 +28,14 @@ Now that you know the reason behind the whole idea , we can dive right in.
 
 
 
-##Getting started 
+## Getting started 
  Disclaimer: There's currently no method to run [zaproxy](https://github.com/zaproxy/zaproxy) on an android device alone.
 
 
 This set up is actually possible by installing a linux based OS ([Raspbian OS Lite](https://downloads.raspberrypi.org/raspbian_lite_latest) in this case) and then creating a LAN with your android phone and your raspberry pi in it to enable you to connect and control the raspberry pi via ssh or vnc using your mobile device.
 
 
-###Requirements:
+### Requirements:
 To be able to use zaproxy on your android phone you'll need a :
 * Raspberry pi (for this setup i used the raspberrypi 4 model B 4G RAM) 
 * A working android phone (no root needed)  
@@ -44,7 +44,7 @@ To be able to use zaproxy on your android phone you'll need a :
 * Micro SD card (64 GB+ recommended)
 * personal computer.
 
-##Step 1 : Installing linux based OS on the raspberry pi
+## Step 1 : Installing linux based OS on the raspberry pi
 This tutorial will show you how to install Raspberry PI OS Lite edition, the official Raspberry PI Foundation free Operating System without a graphical user interface.
 you need to download the image, the 2 distributions can be get with the following links:
 
@@ -67,7 +67,7 @@ Please note that in both cases you have to run the installation software with ad
 After installing the Raspberry PI imager according to your respective operating system. Launch the software with administrative permissions so you can be able to write into the SD card.
 
 
-![Raspberry pi image default screen](/download.png)
+![Raspberry pi image default screen](download.png)
 
 
 
@@ -85,13 +85,13 @@ It doesn't take much time, once the raspberry pi imager is done with the writing
 
 
   
-![Raspberry pi imager writing complete](/images (7).jpeg)
+![Raspberry pi imager writing complete](images (7).jpeg)
 
 
 Now all we have to do is unplug the SD card from the card reader and insert into the raspberry pi and connect it to a power source and wait for the booting process to finish up.
 
 
-##Step 2 : Connecting your raspberry pi to your android phone
+## Step 2 : Connecting your raspberry pi to your android phone
 
 
 Next we turn on our router or mobile hotspot with the wifi setup preinstalled in Step1 to enable raspberry pi connect automatically to it and create a network in which both devices can share connectivity
@@ -99,7 +99,7 @@ Next we turn on our router or mobile hotspot with the wifi setup preinstalled in
 
 Using any ssh client , connect to the ip address(192.168.43.112 in my case) of raspberry pi on the network using the preconfigured ssh credentials in Step 1 to enable access to a terminal window
    
-![Neofetch ssh screen](/IMG_20220819_105041.jpg)
+![Neofetch ssh screen](IMG_20220819_105041.jpg)
 
 Run the following commands to install a VNC server on the raspberry pi
 
@@ -130,10 +130,10 @@ The Raspberry Pi has now started a VNC server session at ***your raspberry pi ip
 Install any VNC client software from the Google Playstore and launch the application add new host using ***your raspberry pi ip:1*** as Host address, use the user that created the vnc server on your raspberry pi and the password you created.
 
 
-##Step 3 : Installing a windows manager and a desktop manager on the raspberry pi
+## Step 3 : Installing a windows manager and a desktop manager on the raspberry pi
 When i was going through this set up initially i tried to make it as light weight and minimalistic as possible, i installed only X , dmenu and a windows manager , i3  but the VNC clients weren't recognising the shortcut keys to run the terminal and dmenu  even after editing i3's config so i had to install a desktop manager , lxde.
   
-![i3 default display](/Screenshot_2022-08-19-18-10-51-590_com.realvnc.viewer.android.jpg)
+![i3 default display](Screenshot_2022-08-19-18-10-51-590_com.realvnc.viewer.android.jpg)
 
 Run the following commands to install X, dmenu ,i3 and lxde on the raspberry pi
 
@@ -149,9 +149,9 @@ echo 'exec startlxde' > ~/.xinitrc
 
 Now we can start up a terminal from the VNC client by clicking the last option on the lower left of the screen and selecting system tools
 
-![raspberry pi vnc terminal screen](/Screenshot_2022-08-20-09-17-08-469_com.realvnc.viewer.android.jpg)
+![raspberry pi vnc terminal screen](Screenshot_2022-08-20-09-17-08-469_com.realvnc.viewer.android.jpg)
 
-##Step 4: Installing zaproxy on the raspberry pi
+## Step 4: Installing zaproxy on the raspberry pi
 Before we start zaproxy installation, we need to install java8 or higher in our raspberry pi (i used java11 for this installation)
 
 ```
@@ -160,11 +160,11 @@ sudo apt-get install openjdk-8-jdk
 
 Go to [Zaproxy official download page](https://www.zaproxy.org/download/) and download the ***`core cross platform package`*** zip file.
 
-![zap core zip download screen](/Screenshot_2022-08-20-12-33-22-028_com.realvnc.viewer.android.jpg)
+![zap core zip download screen](Screenshot_2022-08-20-12-33-22-028_com.realvnc.viewer.android.jpg)
 
 After the download is completed unzip the downloaded package and you'll have a folder like ***`ZAP_version_number`*** , run the zap.sh script in the folder and zaproxy will start.
 
-![zap beginning screen](/Screenshot_2022-08-20-12-57-35-168_com.realvnc.viewer.android.jpg)
+![zap beginning screen](Screenshot_2022-08-20-12-57-35-168_com.realvnc.viewer.android.jpg)
 
 
 The reason for using the core version of zaproxy is because it doesn't  contain unneccesary componets like the in-built browser that doesn't  work on the set up.
@@ -174,6 +174,6 @@ The reason for using the core version of zaproxy is because it doesn't  contain 
 
 All you have to do now is install any browser of your choice, install zaproxy's CA certificate and [set up the proxy](https://www.zaproxy.org/docs/desktop/start/proxies/) on the browser and you're good to go.
 
-![Zap working screen](/Screenshot_2022-08-20-18-01-55-325_com.realvnc.viewer.android.jpg)
+![Zap working screen](Screenshot_2022-08-20-18-01-55-325_com.realvnc.viewer.android.jpg)
 
 Cheers!!!
