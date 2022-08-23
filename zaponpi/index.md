@@ -85,7 +85,7 @@ It doesn't take much time, once the raspberry pi imager is done with the writing
 
 
   
-![Raspberry pi imager writing complete](images (7).jpeg)
+![Raspberry pi imager writing complete](images%20(7).jpeg)
 
 
 Now all we have to do is unplug the SD card from the card reader and insert into the raspberry pi and connect it to a power source and wait for the booting process to finish up.
