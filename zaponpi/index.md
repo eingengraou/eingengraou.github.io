@@ -1,5 +1,5 @@
 ---
-title: "Running ZAP on on a raspberry pi"
+title: "Running ZAP on a raspberry pi"
 summary: >
   Setting up ZAP on the raspberry pi.
 images:
